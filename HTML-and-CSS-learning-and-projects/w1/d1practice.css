@@ -1,0 +1,31 @@
+/* CSS stands for Cascading Style Sheets.
+ * It is used to style HTML documents.
+ * This code snippet demonstrates how to apply CSS styles to an HTML element.
+ */
+/*Inline CSS styles can be applied directly to HTML elements using the style attribute.
+    * In this case, the text color of the element will be red.
+    Internal CSS can also be used by including a <style> tag in the head of the HTML document.
+    * External CSS can be linked using a <link> tag to an external stylesheet.
+    * Example of inline CSS:
+    * ```html
+    <p style="color: red;">This text will be red.</p>
+    ```
+ */
+
+ /* selectors */
+ p { color : blue;} /* This will change the text color of all <p> elements to blue. */
+ .class-name { font-size: 20px; } /* This will change the font size of all elements with class "class-name" to 20px. */
+ #id-name { background-color: yellow; } /* This will change the background color of the element with id "id-name" to yellow. */
+
+ /* colour syntax
+ color can be specified in various formats:
+    * Named colors: "red", "blue", "green", etc.
+    * Hexadecimal: "#ff0000" for red, "#0000ff" for blue, etc.
+    * RGB: "rgb(255, 0, 0)" for red, "rgb(0, 0, 255)" for blue, etc.
+    * RGBA (with alpha for transparency): "rgba(255, 0, 0, 0.5)" for semi-transparent red.
+    * HSL: "hsl(120, 100%, 50%)" for green.
+ */
+ /* font styling*/
+ body { font-family: Arial, sans-serif; 
+        font-size: 16px;
+} /* This will set the font family of the entire document to Arial. */

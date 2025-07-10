@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head><title>Day 20 Practice</title></head>
+<body>
+<h1>Welcome to Day 20 Practice</h1>
+<input type="email" name="email" autocomplete="username">
+<form action="/submit" method="post" novalidate>
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+    
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+    
+    <button type="submit">Submit</button>
+</form>
+<p>Note: The form above has the <code>novalidate</code> attribute, which disables HTML5 validation.</p>
+<form method="post" enctype="multipart/form-data">
+    <input type="file" name="photo">
+</form>
+<form accept-charset="UTF-8">
+    <input type="text" name="name" placeholder="Name">
+    <input type="email" name="email" placeholder="Email">
+    <button type="submit">Submit</button>
+</form>
+<meta name="description" content="This is a practice page for Day 20 of HTML and CSS learning. It includes various form elements and attributes.">
+</body>
+</html>
+
+<!-- <%--
+1. autocomplete Attribute
+    
+    Improves form usability by letting the browser remember and suggest prior inputs:
+    
+    <input type="email" name="email" autocomplete="username">
+
+2. novalidate on <form>
+    
+    Disables built-in form validation if you prefer handling it manually:
+
+    <form action="/submit" method="post" novalidate>
+      …
+    </form>
+ 
+3. enctype for File Uploads
+    
+    When using <input type="file">, set the form’s encoding to send files:
+
+    <form method="post" enctype="multipart/form-data">
+      <input type="file" name="photo">
+    </form>
+
+4. accept-charset on <form>
+    
+    Specifies the character encodings the server can handle:
+
+    <form accept-charset="UTF-8">
+      …
+    </form>
+ 
+5. <meta name="description">
+    
+    Provides a summary for search engines and social previews:
+
+    <meta name="description" content="Learn HTML fundamentals with concise daily facts.">
+    
+--%>-->

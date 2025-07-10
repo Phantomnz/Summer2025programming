@@ -1,0 +1,16 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build inventory",
+      "type": "shell",
+      "command": "gcc",
+      "args": [
+        "-Wall",
+        "item.c", "fileio.c", "main.c",
+        "-o", "inventory"
+      ],
+      "group": "build"
+    }
+  ]
+}

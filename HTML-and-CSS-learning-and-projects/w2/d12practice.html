@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head><title>Day 12 Practice</title></head>
+<body>
+<h1>Welcome to Day 12 Practice</h1>
+<fieldset>
+    <legend>Personal Info</legend>
+    <input type="text" placeholder="Enter your name" name="name">
+</fieldset>
+<input type="range" min="0" max="100">
+<input type="color" name="favcolor">
+<input type="text" required minlength="3">
+<input list="browsers" name="browser">
+<datalist id="browsers">
+  <option value="Chrome">
+  <option value="Firefox">
+</datalist>
+<script>
+    document
+        .getElementById('change')
+        .addEventListener('click', () => {
+            document.documentElement
+                .style
+                .setProperty('--main-color', 'blue');
+        });
+</script>
+<!-- The above was part of the CSS facts but can only be put here for now-->
+</body>
+</html>
+
+<!-- 1. Fieldset and Legend
+    
+    Group related form elements:
+
+    <fieldset>
+      <legend>Personal Info</legend>
+      <input type="text" name="name">
+    </fieldset>
+
+    
+2. Input Type: Range
+    
+    Slider for numerical values:
+
+    <input type="range" min="0" max="100">
+
+    
+3. Input Type: Color
+    
+    Lets users select a color:
+
+    <input type="color" name="favColor">
+    
+4. Input Validation Attributes
+    
+    Use `required`, `minlength`, `maxlength`, and `pattern` to validate:
+
+    <input type="text" required minlength="3">
+
+    
+5. Datalist for Suggestions
+    
+    Offers autocomplete-like suggestions:
+
+    <input list="browsers" name="browser">
+    <datalist id="browsers">
+      <option value="Chrome">
+      <option value="Firefox">
+    </datalist>
+    
+-->

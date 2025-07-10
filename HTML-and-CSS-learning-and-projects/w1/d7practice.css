@@ -1,0 +1,45 @@
+/* 1. **Advanced Attribute Selectors**
+    Match elements based on attribute values:*/
+
+a[href^="https"] { 
+  color: green;
+}
+input[type$="text"] { 
+  background-color: lightyellow;
+}
+
+/* 2. **Custom Property Fallbacks**
+    
+    Provide default if a CSS variable isn’t set:*/
+d {
+    color: var(--main-color, black);
+}
+
+/* 3. **Keyframe Animations**
+    
+    Define reusable animations:*/
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+.box { animation: fadeIn 2s ease-in; }
+
+/*4. **Grid Template Areas**
+    
+    Name grid areas for clearer layouts:*/
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "nav    main"
+    "footer footer";
+}
+.header { grid-area: header; }
+
+/*5. **CSS `clamp()` Function**
+    
+    Constrain values between a min, preferred, and max:*/
+p {
+  font-size: clamp(1rem, 2vw, 2rem);
+}

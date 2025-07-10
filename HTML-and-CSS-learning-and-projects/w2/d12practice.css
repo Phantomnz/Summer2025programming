@@ -1,0 +1,16 @@
+m{
+    margin-inline-start: 0px;
+} /* Use margin-inline-start instead of margin-left for better RTL support */
+
+div:has(> m){
+    border: 1px solid black;
+} /* CSS :has() selector enables parent selection based on child elements */
+/* Note: The :has() selector is not widely supported in all browsers yet. 
+   Ensure to check compatibility before using it in production. */
+
+@media (max-width: 768px){
+    body{ font-size: 14px; } /* Adjust font size for smaller screens */
+}
+
+/* Pseudo-classes - :hover, :focus, :nth-child and :first-child add interactivity and structure based styling */
+

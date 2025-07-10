@@ -1,0 +1,47 @@
+<html>
+<!DOCTYPE html> <!--This triggers standard mode in browsers-->
+<head><title>Day 9 Practice</title></head>
+<body>
+<h1>Welcome to Day 9 Practice</h1>
+&lt; is the same as left pointing angle bracket, it is used to represent the less than sign in HTML &lt;
+&gt; is the same as right pointing angle bracket, it is used to represent the greater than sign in HTML &gt;
+&amp; is the same as ampersand, it is used to represent the ampersand sign in HTML &amp;
+<div> This is a div element, it will also be displayed in the browser </div>
+<p> This is a paragraph element, it will also be displayed in the browser, this is a block level element </p><span> This is a span element, since it is inline it will flow within text </span>
+<p> sample paragraph text </p><a>This is another inline element</a>
+<article> This is an article element, it will also be displayed in the browser </article>
+<aside> This is an aside element, it will also be displayed in the browser </aside>
+<section> This is a section element, it will also be displayed in the browser </section>
+<nav> This is a nav element, it will also be displayed in the browser </nav>
+
+
+</body>
+</html>
+
+<!-- <%-- This is a server-side comment, it will not be sent to the client --%> -->
+<!-- HTML – Day 9
+
+1. Document Type Declaration
+    The <!DOCTYPE html> at the top triggers standards mode in browsers.
+
+2. Character Entities
+
+    Use entities for reserved characters:
+    &lt;  <!-- < -->
+    &gt;  <!-- > -->
+    &amp; <!-- & -->
+<!--   
+3. Block vs. Inline Elements
+    - Block-level (e.g. `<div>`, `<p>`) start on a new line and stretch full width.
+    - Inline (e.g. `<span>`, `<a>`) flow within text.
+4. Semantic HTML
+
+    Use meaningful tags for structure and accessibility:
+    <article>, <section>, <aside>, <nav>
+
+5. HTML Comments in Templates
+
+    When using server-side templates, avoid leaking comments: -->
+
+    <!-- This will not appear in rendered HTML -->
+    <!--<%-- This server-side comment won’t be sent to client --%>-->

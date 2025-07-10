@@ -1,0 +1,18 @@
+p {
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%); /* You can use clip-path: polygon() to clip elements into custom shapes */
+} /* Here we are clipping a paragraph into a triangle shape */
+
+g {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* This will create a responsive grid layout */
+} /* Here we are defining a grid container with responsive columns */
+/* auto-fill will fill the row with as many columns as possible, while auto-fit will fit the columns to the available space */
+
+ol { counter-reset: myCounter; } /* This will reset the counter for ordered lists */
+li::before {
+    counter-increment: myCounter; /* This will increment the counter for each list item */
+    content: counter(myCounter) ". "; /* This will display the counter before each list item */
+}
+
+/* Pseudo-elements recap: ::before and ::after add content before or after elements, commonly used for decorative or structural content */
+
+/* Box model recap: The box model consists of margins, borders, padding, and the content area. Understanding how these properties interact is crucial for layout design. */

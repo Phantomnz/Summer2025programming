@@ -1,0 +1,42 @@
+/* CSS Scroll linked Animations */
+@scroll-timeline scrollFx {
+    source: auto; /* Automatically tracks scroll position */
+    orientation: block; /* Scrolls in the block direction */
+}
+.fade-in {
+    animation: fade 1s both; /* Fades in over 1 second */
+    animation-timeline: scrollFx; /* Applies the scroll timeline */
+}
+@keyframes fade {
+    from {
+        opacity: 0; /* Start fully transparent */
+    }
+    to {
+        opacity: 1; /* Fade in effect */
+    }
+}
+
+/* CSS container units (cq-width) */
+.widget {
+    width: 50cqw; /* 50% of container's inline size */
+}
+
+/* Mix-blend mode for layered effects */
+.overlay {
+    background: url(image.jpg); /* Background image for the overlay */
+    mix-blend-mode: screen; /* Blends the overlay with the background */
+}
+
+/* grid-auto-flow: dense; for masonry fill */
+.masonry {
+    display: grid; /* Uses grid layout for masonry effect */
+    grid-auto-flow: dense; /* Fills gaps in the grid */
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Responsive columns */
+}
+
+/* Aspect-ratio property for responsive images */
+.video {
+    aspect-ratio: 16/9; /* Maintains a 16:9 aspect ratio */
+    width: 100%; /* Full width of the container */
+    background: black; /* Background color for the video */
+}

@@ -1,0 +1,33 @@
+t {
+    text-transform: uppercase; /* this transforms text to uppercase, but text transforms in general modify text casing */
+    text-decoration: underline; /* Underlines the text */
+}
+
+rfs {
+    font-size: 1.5em; /* Responsive Font Size, scales with parent */
+    font-size: 2.0vw; /* Responsive Font Size, scales with viewport width */
+}
+
+
+grid {
+    display: grid;/* Enables grid layout */
+    grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns and one row */
+    grid-gap: 10px; /* Sets the gap between grid items */
+}
+
+circle {
+    clip-path: circle(50% at center); /* Clips the element to a circle shape */
+    /* The circle is centered and has a radius of 50% of the element's width or height */
+    /* clip-path is used to create complex shapes (non rectangular) */
+}
+
+:root {
+    --main-color: #3498db; /* Custom property for main color */
+}/* This allows you to use var(--main-color) throughout your CSS for consistency */
+
+div {
+    color: var(--main-color); /* Uses the custom property defined above */
+}/* remember to define the custom property in the :root selector for global access */
+/* Custom properties (CSS variables) are defined with -- followed by the variable name */
+/* They can be used to store values that can be reused throughout the CSS */
+

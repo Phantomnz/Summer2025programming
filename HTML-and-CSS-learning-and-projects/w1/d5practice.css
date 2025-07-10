@@ -1,0 +1,24 @@
+/* The display property is used to control the layout of elements */
+
+div {
+    display : flex; /* or inline, inline-block, block, grid, table, etc. */
+    flex-direction: column; /* or column */
+}/* controlling direction of flex children with flex-direction */
+
+
+/* The position property is used to precisely place elements*/
+p {
+    position :absolute; /* or relative, fixed, sticky */
+    top: 50px; /* or left, right, bottom */
+    left: 100px; /* or top, right, bottom */
+}
+
+/* overflow property is used to control how content that overflows an element's box is handled */
+o {
+    overflow: hidden; /* or visible, scroll, auto */
+}
+
+/* Box shadow allows you to add a shadow effect around an element's frame */
+.box {
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5); /* horizontal offset, vertical offset, blur radius, color */
+}

@@ -1,0 +1,30 @@
+/* text alignment- use text align to align text */
+body {
+    text-align: center;
+}
+
+/*Background image- use background image to set an image as the background */
+body {
+    background-image: url('image.png');
+    background-size: cover;
+}
+
+
+/*Pseudo-elements- use pseudo-elements to add content before or after an element, and style it */
+p::before{
+    content: "Note:";
+    font-weight: bold;
+}
+
+/*Media queries- use media queries to apply styles based on the viewport size, make your site responsive */
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+/*Transitions- use transitions to animate changes in CSS properties */  
+button {
+    transition: background-color 0.3s ease;
+}
+

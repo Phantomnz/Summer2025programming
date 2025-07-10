@@ -1,0 +1,26 @@
+/* Transitions - smoothly animate changes in CSS property values */
+.box {
+    transition: all 0.3s ease;
+}
+
+/* media queries-  adapt styling for different devices*/
+@media (max-width: 600px){
+    body { font-size: 14px;}
+}
+
+
+/* Z-index - Controls the stacking order of elements */
+.modal {
+    z-index: 1000; /* Higher value means it appears above other elements */
+    position: absolute; /* Required for z-index to work */
+}
+/* Opacity vs visibility - opacity: 0; makes an element transparent but still interactive. visibility: hidden; hides but keeps the space reserved */
+
+/* Pseudo-Elements - create decorative elements without additional HTML */
+p::first-line {
+    font-weight: bold; /* Makes the first line of a paragraph bold */
+}
+div::after{
+    content: " - End of Section"; /* Adds text after the div content */
+    color: gray; /* Styles the added text */
+}

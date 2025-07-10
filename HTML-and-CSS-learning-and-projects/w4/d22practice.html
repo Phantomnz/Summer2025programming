@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head><title>Day 22 Practice</title></head>
+<body>
+<h1>Welcome to Day 22 Practice</h1>
+<!-- fieldset and legend -->
+<form>
+    <fieldset>
+        <legend>Account Details</legend>
+        <label for="email">Email</label>
+        <input id="email" type="email" required>
+    </fieldset>
+</form>
+<!-- Input pattern validation -->
+<input type="text" pattern="[A-Za-z]{3,}" title="at least 3 letters" required>
+
+<!-- CSS Grid grid-auto-flow: Controls placement of items not explicitly positioned-->
+<div class="grid">
+    <div>A</div><div>B</div><div>C</div><div>D</div>
+</div>
+<style>
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-flow: row;
+}    
+</style>
+<!-- Responsive Picture with media -->
+<picture>
+    <source media="(min-width: 650px)" srcset="large.jpg">
+    <source media="(min-width: 465px)" srcset="medium.jpg">
+    <img src="small.jpg" alt="scenery">
+</picture>
+<!-- Prefetch Java Script Hints -->
+<link rel="preload" href="analytics.js" as="script">
+<link rel="prefetch" href="next-page.html">
+</body>
+</html>

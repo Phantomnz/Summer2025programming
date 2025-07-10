@@ -1,0 +1,22 @@
+/* CSS Specificity Hierarchy*/
+/*Inline styles > IDs > Classes/Attributes > Elements. Specificity determines which rule applies*/
+/* the more right the selector is, the more specific it is */
+
+/* Box model review */
+/* Total element width = margin + border + padding + content width */
+/* Use box-sizing: border-box; to include padding and border in the total width */
+
+calc { /* CSS calc() Function: Perform calculations in property values */
+    width: calc(100% - 80px); /* Subtracts 80px from the total width */
+}
+
+/* Flexbox order priority - Controls the visual order of flex items without changing HTML */
+.item {
+    order: 2; /* Default is 0, higher numbers appear later */
+}
+
+/* Focus states - Customize focus styles for keyboard navigation */
+button:focus {
+    outline: 2px solid blue; /* Adds a blue outline on focus */
+    outline-offset: 2px; /* Adds space between the outline and the element */
+}

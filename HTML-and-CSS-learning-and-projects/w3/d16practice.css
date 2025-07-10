@@ -1,0 +1,49 @@
+/* You can name parts of your CSS grid layout using grid-template-areas for clarity */
+name {
+    grid-template-areas:
+     "header header"
+     "sidebar content"
+     "footer footer"
+     ;
+}
+
+/* CSS counter increment and usage: CSS allows automatic numbering using counter-increment and content. Useful lists or steps */
+li::before {
+    counter-increment: step;
+    content: "Step " counter(step) ": ";
+}
+
+opt {
+    contain: layout style;
+    /* contain: layout style; - limits the scope of style/layout changes, improving rendering performance in large UIs */
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    border: 5px solid black;
+    margin: 10px;
+}
+
+.responsive-box {
+    width: 50%;
+    height: 50%;
+    min-width: 100px;
+    min-height: 100px;
+    max-width: 400px;
+    max-height: 400px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+a:hover { color: red; }
+button:active { transform: scale(0.98); }

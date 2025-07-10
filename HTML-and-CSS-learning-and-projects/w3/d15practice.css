@@ -1,0 +1,27 @@
+/* CSS Paint API (Houdini) Example */
+paint{
+    paint-worklet: url("worklet.js");
+    background-image: paint(mycustompaint);
+} /* allows custom painting logic in JavaScript (note: pure API registration in CSS) */
+
+/* will-change property for optimizations */
+.anim {
+    will-change: opacity, transform;
+}
+/* Hints the browser to optimize for upcoming changes */
+
+/* CSS container queries */
+@container (min-width: 300px){
+    .card { display: grid;}
+} /* Style elements based on their parent container's size (supported in modern browsers) */
+
+/* Box sizing models */
+*, *::before, *::after {
+    box-sizing: border-box; /* Ensures padding and borders are included in element's total width/height */
+} /* Consistent box model across elements */
+
+/* Flexbox gap property */
+.container {
+    display: flex;
+    gap: 1rem; /* Adds consistent space between flex items without margins */
+}

@@ -1,0 +1,35 @@
+/* CSS color functions ( lab(), lch() ) */
+.element {
+    background: lab(50% 20 30); /* Lightness 50%, a 20, b 30 */
+    color: lch(50% 20 30); /* Lightness 50%, chroma 20, hue 30 */
+}
+
+/* Nested Grid Layout with Named Lines: */
+.grid {
+    display: grid; /* Enable grid layout */
+    grid-template-columns: [start] 1fr [middle] 2fr [end]; /* Define columns with named lines */
+}
+.item {
+    grid-column: start / middle; /* Span from 'start' to 'middle' */
+}
+
+/* Forced Colors Mode Styles: */
+@media (forced-colors: active) {
+    a {
+        forced-color-adjust: none; /* Prevent forced color adjustments */
+        color: Highlight; /* Use system button text color */
+    }
+}
+
+/* Custom media queries (@custom-media) */
+@custom-media --mobile (max-width:480px); /* Define custom media query for mobile devices */
+@media (--mobile) {
+    .element {
+        background-color: lightblue; /* Change background on mobile */
+    }
+}
+
+/* Scroll Snap Alignment Options: */
+.item {
+    scroll-snap-align: center end; /* Center the item in the scroll container */
+}

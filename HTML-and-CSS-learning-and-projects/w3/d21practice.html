@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head><title>Day 21 Practice</title></head>
+<body>
+<h1>Welcome to Day 21 Practice</h1>
+<input type="text" pattern="\d{4}" title="Enter a 4-digit code">
+<dialog id="modal">Hello!</dialog>
+<button onclick="modal.showModal()">Open modal</button>
+<img src="world.jpg" usemap="#worldmap">
+<map name="worldmap">
+    <area shape="rect" coords="34,44,270,350" href="usa.html" alt="USA">
+    <area shape="circle" coords="337,300,44" href="canada.html" alt="Canada">
+    <area shape="poly" coords="100,100,150,50,200,100" href="mexico.html" alt="Mexico">
+</map>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="prefetch" href="next-page.html">
+</body>
+</html>
+
+<!-- <%-- 
+2 Review Facts (Fundamentals):
+
+1. pattern Attribute
+    
+    Enables regex validation on inputs, e.g.:
+
+    <input type="text" pattern="\d{4}" title="Enter a 4-digit code">
+
+2. accept-charset on <form> (did this yesterday so it's not in the code above)
+    
+    Specifies which character encodings the server can handle:
+    
+    ```html
+    <form accept-charset="UTF-8">
+      …
+    </form>
+
+
+3 Advanced Facts:
+
+1. <dialog>` Element
+
+Native modals without JavaScript libraries:
+
+<dialog id="modal">Hello!</dialog>
+<button onclick="modal.showModal()">Open</button>
+
+1. Image Maps (`<map>` & `<area>`)
+    
+    Define clickable regions on images:
+    
+    ```html
+    <img src="world.jpg" usemap="#worldmap">
+    <map name="worldmap">
+      <area shape="rect" coords="34,44,270,350" href="usa.html" alt="USA">
+    </map>
+ 
+2. Resource Hints (`prefetch` & `preconnect`)
+    
+    Instruct browsers to prepare or fetch resources in advance:
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="prefetch" href="next-page.html">
+
+--%>-->

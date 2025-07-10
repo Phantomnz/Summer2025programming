@@ -1,0 +1,34 @@
+/* CSS Motion Path (offset-path and offset-distance): Animate an element along a path */
+.moving {
+    offset-path: path("M10, 80 C 40,10, 65,10 95,80 S 150,150 180,80"); /* define the path */
+    animation: follow 3s infinite linear; /* animate the element along the path */
+}
+
+@keyframes follow {
+    to { offset-distance: 100%; } /* move the element along the path */
+}
+
+/* min-content and max-content Sizing keywords: Let an element size itself based on its content's minimum or maximum intrinsic size */
+.column {
+    width: min-content; /* size the element to its minimum intrinsic width */
+    height: max-content; /* size the element to its maximum intrinsic height */
+}
+
+/* CSS Logical Box alignment: Use place-content and place-items in CSS grid to align items in block and inline axes together */
+.grid {
+    display: grid; /* create a grid container */
+    place-content: center space-between; /* align items in the block axis to the center and in the inline axis with space between */
+    place-items: center; /* align items in both axes to the center */
+}
+
+/* @media (prefers-reduced-motion: reduce): Detects and respect user preferences for reduced motion to improve accessibility */
+@media (prefers-reduced-motion: reduce){
+    * { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; } /* disable animations and transitions */
+}
+/* !important is used to override any other styles that may conflict with this setting */
+
+/* Complex Shapes with clip-path: polygon(): create non-rectangular elements without images */
+.hexagon {
+    clip-path: polygon(25% 6.7%, 75% 6.7%, 100% 50%, 75% 93.3%, 25% 93.3%, 0% 50%); /* create a hexagon shape */
+}
+

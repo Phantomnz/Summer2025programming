@@ -1,0 +1,27 @@
+/* font properties, you can style text with: */
+.example-class {
+  font-family: arial, sans-serif;
+  font-size: 16px;
+  font-weight: italic;
+
+  /*border short-hand, CSS allows combining border properties */
+  border: 2px solid black;
+
+  /* centering with flexbox, makes it easy  */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Pseudo-classes, CSS allows you to style elements based on their state */
+a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+/* Z index, CSS allows you to control the stacking order of elements */
+.z-index-example {
+  position: relative;
+  z-index: 10; /* Higher value means it will be on top */
+}
+

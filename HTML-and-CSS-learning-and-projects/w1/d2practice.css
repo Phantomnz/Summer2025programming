@@ -1,0 +1,30 @@
+/* Every Html element is a box made of:
+Content - the actual content of the element
+Padding - space between the content and the border - space inside the border
+Border - a line around the padding
+Margin - space outside the border, separating the element from others
+*/
+
+.my-class {
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+/* my class targets multiple elements */
+
+#my-id {
+    margin: 5px;
+    padding: 15px;
+    border: 2px solid blue;
+}
+
+/* my id targets a single element 
+IDs have higher specificity than classes, meaning they override class styles if both are applied to the same element 
+*/
+
+
+/* you can use compound selectors:*/
+div.my-class { color: red; } /* targets <div> elements with class "my-class", a div with class "my-class" will be red */
+ul li { list-style: none; } /* targets <li> elements inside <ul>, removing the default list style */
+

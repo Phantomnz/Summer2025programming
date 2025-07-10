@@ -1,0 +1,53 @@
+/* Cascade layers (@layer): Helps organize CSS with multiple sources, giving controlled priority to different stylesheets or sections*/
+@layer {
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
+
+}
+
+/* CSS subgrid (Experimental): */
+g {
+    display: grid;
+    grid-template-columns: subgrid;
+}
+/* use grid-template-columns: subgrid; inside a nested grid to inherit the column structure from its parent grid */
+
+/* font-variation-settings: Control variable fonts directly */
+body {
+    font-family: "Roboto Flex";
+    font-variation-settings: "wght" 700, "wdth" 125;
+}
+
+/* scroll-timeline & view-timeline (CSS scroll-linked animations): Define an element as a timeline for scroll-based animations: */
+
+.container {
+    view-timeline: --my-t1;
+    scroll-timeline: --my-t1;
+}
+/* scroll-timeline: Used to create animations that are linked to the scroll position of the page */
+/* view-timeline: Used to create animations that are linked to the viewport's scroll position */
+
+.item{
+    animation-timeline: --my-t1;
+    animation-name: fade-in 1s both;
+}
+
+/* animation-timeline: Used to specify the timeline for an animation */
+/* animation-name: Used to define the name of the animation to be applied */
+
+/* Flex box align-items: controls cross-axis alignment (flex-start, center, stretch, etc.) */
+div {
+    align-items: center; /* Aligns flex items to the center of the flex container */
+    flex-direction: column; /* Stacks flex items vertically */
+    display: stretch; /* Stretches the flex items to fill the container */
+
+}
+
+/* CSS variable fallbacks: provide a default value if the variable is not defined */
+p {
+    color: var(--link-color, blue); /* Using a CSS variable for color */
+}
+
+

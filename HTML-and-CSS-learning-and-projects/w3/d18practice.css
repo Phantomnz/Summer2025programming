@@ -1,0 +1,37 @@
+/* CSS scroll snap (again) : you can create snap points for scrolling containers */
+.scroll-container {
+    scroll-snap-type: x mandatory; /* Enable horizontal snap */
+    overflow-x: scroll; /* Enable horizontal scrolling */
+}
+.scroll-item {
+    scroll-snap-align: start; /* Snap to the start of the item */
+}
+
+/* CSS accent-color: property: This customizes the color of form controls like checkboxes, radio buttons*/
+input[type="checkbox"] {
+    accent-color: #0b15d6d2; /* Custom accent color for checkboxes */
+}
+
+/* CSS @supports: This allows you to apply styles based on browser support for specific features */
+@supports (display: grid){
+    .container {
+        display: grid; /* Use grid layout if supported */
+        grid-template-columns: repeat(3, 1fr); /* Create three equal columns */
+        gap: 10px; /* Space between grid items */
+    }
+}
+
+.responsive-box {
+    min-width: 200px; /* Minimum width of the box */
+    max-width: 600px; /* Maximum width of the box */
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    border: 1px solid #000;
+    margin: 10px;
+    background-color: #f0f0f0;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}

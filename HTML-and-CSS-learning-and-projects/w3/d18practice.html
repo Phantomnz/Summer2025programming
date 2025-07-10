@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head><title>Day 18 Practice</title></head>
+<body>
+<h1>Welcome to Day 18 Practice</h1>
+<canvas id="myCanvas" width="500" height="500" style="border:1px solid #000000;"></canvas>
+<progress value="50" max="100"></progress>
+<abbr title="Hypertext Markup Language">HTML</abbr>
+<dfn><i>HTML</i> is the standard markup language for creating web pages.</dfn>
+<meter value="0.3"min="0" max="1">30%</meter>
+<link rel="preload" href="d18practice.css" as="script">
+</body>
+</html>
+
+<!-- <%--
+ 1. Canvas Coordinate System
+    
+    The <canvas> element uses an origin at its top-left corner. You draw shapes by specifying x/y coordinates relative to that origin.
+
+2. The <progress> Element
+
+    Native progress bar support; you can update value and max attributes to reflect task completion.
+
+3. <abbr> vs. <dfn>
+    - <abbr title="World Health Organization">WHO</abbr> gives an abbreviation with tooltip.
+    - <dfn> marks the defining occurrence of a term in a document.
+4. <meter> Element
+
+    Represents a scalar measurement within a known range; similar to <progress> but for gauges:
+
+    <meter value="0.7" min="0" max="1">70%</meter>
+
+5. HTML Import Priority Hints
+
+    Use as="script" or as="image" in preload to signal resource type for better fetching:
+
+    <link rel="preload" href="app.js" as="script">
+    <link rel="preload" href="image.jpg" as="image">

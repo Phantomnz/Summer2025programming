@@ -1,0 +1,22 @@
+.masked { /* CSS masking: Allows you to control which parts of an element are visible */
+    mask-image: url(shape.svg); /* URL to the SVG mask */
+    mask-mode: alpha; /* Uses the alpha channel of the mask image */
+}
+.container { /* contain property for performance optimization - Suggests to the browser that an element's layout, paint, or size can be isolated: */
+    contain: layout paint; /* layout: isolates the element's layout from the rest of the document */
+}
+
+@supports (display:grid){ /* @supports for feature queries: allows conditional styling based on browser support */
+    .wrapper { /* If the browser supports grid layout, apply these styles */
+        display: grid; /* Use grid layout */
+    }
+}
+
+/*CSS Box Model Recap
+    
+    `width` + `padding` + `border` + `margin` determines the full element size unless `box-sizing` is adjusted. */
+
+
+/* The `z-index` Stacking Context
+    
+    Controls the front-back layering of elements. Higher `z-index` means higher priority if in the same stacking context. */
