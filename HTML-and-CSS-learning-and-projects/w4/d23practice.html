@@ -3,6 +3,17 @@
 <head><title>Day 23 Practice</title></head>
 <body>
 <h1>Welcome to Day 23 Practice</h1>
-
+<abbr title="Scalable Vector Graphics">SVG</abbr> 
+<iframe src="map.html" loading="lazy"></iframe> <!-- Defers offscreen iframe loading until needed, reducing initial page load time -->
+<nav> 
+    <a href="/">Home</a>
+    <a href="/about">About</a>
+</nav> <!-- Semantically marks primary navigation links, aiding both accessibility and SEO (Search Engine Optimization) -->
+<link rel="manifest" href="/site.webmanifest"> <!-- Points to a JSON manifest for progressive web apps (PWA), defining icons, colors, and startup behaviour -->
+<style>
+    @supports (display: grid){
+        .container { display: grid;} 
+    } 
+</style> <!-- Applies grid layout if supported, enabling graceful degradation -->
 </body>
 </html>
