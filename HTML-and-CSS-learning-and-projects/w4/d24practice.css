@@ -1,0 +1,20 @@
+/* Custom Counter Styles - You can define your own list marker system using @counter-style*/
+@custom-style dots {
+    system: cyclic;
+    symbols: "•" "◦" "▪";
+    suffix: " ";
+}
+ul {
+    list-style: dots;
+}
+
+/* Using :has() for parent selection: Allows conditional styling of a parent based on child presence */
+div:has(> img) {
+    border: 2px solid red;
+} 
+
+/* Accent color for form controls: Sets the highlight color for checkboxes, radio buttons, etc. */
+input[type="checkbox"]{
+    accent-color: limegreen;
+}
+

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head><title>Day 24 Practice</title></head>
+<body>
+<h1>Welcome to Day 24 Practice (responsive heading)</h1>
+<h2>section title</h2>
+<img src="logo.png" alt="company logo"> <!-- Always Include meaningful alt text for images so screen readers can convey their purpose -->
+<style>
+    h1 {
+        font-size: clamp(1.5rem, 4vw, 3rem); /* clamp(min, preferred, max) scales the font size between 1.5rem and 3rem based on viewport width */
+    }
+
+</style>
+<div class="grid">
+    <div>A</div><div>B</div><div>C</div><div>D</div>
+</div>
+<style>
+    .grid {
+        display: grid; /* Enables grid layout */
+        grid-template-columns: repeat(2, 1fr); /* Creates two equal columns */
+        grid-auto-flow: column; /* Fills columns top to bottom before moving to the next column */
+    }
+</style>
+<link rel="preconnect" href="https://fonts.gstatic.com"> <!-- preconnect opens early connections to 3rd party origins -->
+<link rel="prefetch" href="next-page.html"> <!-- prefetch fetches resources that might be needed for future navigation, improving performance -->
+</body>
+</html>
