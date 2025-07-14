@@ -1,0 +1,34 @@
+/* box-sizing: border-box - includes padding and border in the element's total width and height */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Flexbox gap - Adds consistent spacing between flex items without needing to add margin */
+.nav {
+    display: flex;
+    gap: 1 rem; /* Adjust the gap as needed */
+}
+
+/* Viewport units - Use vw and vh for responsive sizing ( 1vw = 1% of viewport width, 1vh = 1% of viewport height) */
+.hero {
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    background-color: lightblue; /* Example background color */
+}
+
+/* object-fit for Media - Controls how replaced content (like images) fits within its container */
+img {
+    width: 100%; /* Full width of the container */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Cover the entire container, cropping if necessary */
+}
+
+/* CSS Variables (--) - Define reusable values for colors, sizes, etc. can be updated at runtime or via theming */
+:root {
+    --primary-color: #3498db; /* Example primary color */
+    --secondary-color: #2ecc71; /* Example secondary color */
+    --font-size-base: 16px; /* Example base font size */
+}
+button {
+    background-color: var(--primary-color); /* Use primary color variable */
+}

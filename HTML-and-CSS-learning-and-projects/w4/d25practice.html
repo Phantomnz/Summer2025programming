@@ -2,7 +2,22 @@
 <html>
 <head><title>Day 25 Practice</title></head>
 <body>
+<main>
 <h1>Welcome to Day 25 Practice</h1>
-
+<p>This is a practice page for Day 25 of the HTML and CSS course. This is in the main section.</p>
+</main> <!-- Encapsulates the main content of the page, aiding accessibility and SEO by distinguishing main content from navigation and footers. -->
+<!-- <link rel="stylesheet" type="text/css" href="d25practice.css">  Loads CSS from a separate file, keeping HTML clean and allowing caching -->
+<link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- Instructs which browser icon to use in tabs or bookmarks -->
+<p>remember to review the <mark>Important</mark>sections first</p> <!-- Mark indicates text of special relevance or highlights search terms; browsers style it with a yellow background by default -->
+<style>
+    header {
+        position: sticky; /* keeps the element fixed within its container once the scroll reaches its offset (here the top of the viewport), without removing it from the document flow */
+        top: 0; /* Sets the top offset for the sticky header */
+        background: white; /* Sets the background color of the header */
+    }
+</style>
+<header>
+    <h1>Sticky Header Example</h1>
+</header>
 </body>
 </html>
