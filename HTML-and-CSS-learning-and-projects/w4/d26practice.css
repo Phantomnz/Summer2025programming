@@ -1,0 +1,27 @@
+/* Custom property fallback chains - Layer multiple fallbacks in one var() call */
+color: black; /* fallback for older browsers */
+color: var(--primary, var(--secondary, black));
+
+/* Object-position for repositioning - control the alignment of replaced content like images or videos within their frame: */
+img {
+    object-fit: cover; /* cover the entire frame, cropping if necessary */
+    object-position: center; /* center the image within the frame */
+}
+
+/* grid-auto-rows for consistent row heights - set a uniform height for implicitly created grid rows */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* three equal columns */
+    grid-auto-rows: 150px; /* all implicitly created rows will have a height of 150px */
+}
+
+/* Scrollbar styling with scrollbar-width (Firefox) - Adjust thickness or hiding scrollbars in Firefox */
+.container {
+    scrollbar-width: thin; /* makes the scrollbar thinner */
+    scrollbar-color: #888 #f0f0f0; /* sets the color of the thumb and track */
+}
+
+/* :focus-visible for Accessibility - Show focus styles only when navigated via keyboard, not mouse */
+button:focus-visible {
+    outline: 2px solid blue; /* visible focus outline for keyboard navigation */
+}
