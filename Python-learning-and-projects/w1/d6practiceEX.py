@@ -149,7 +149,10 @@ async def say(msg):
     print(msg)  # Asynchronous function to print a message
     await asyncio.sleep(1)  # Simulate a non-blocking delay
 
-asyncio.run(asyncio.gather(say ("Hello"), say("World")))  # Run multiple asynchronous tasks concurrently
+async def main_async():
+    await asyncio.gather(say("Hello"), say("World"))
+
+asyncio.run(main_async())  # Run multiple asynchronous tasks concurrently
 
 
 # Multiprocessing basics - Spawn seperate processes to bypass the Global Interpreter Lock (GIL) for CPU-bound tasks
@@ -158,8 +161,10 @@ def task(name):
     print(f"Task {name} is running")  # Function to run in a separate process
 if __name__ == "__main__":  # Ensure this block runs only when the script is executed directly
     processes = [Process(target=task, args=(1,)), Process(target=task, args=(2,))]  # Create two processes
-    p.start()  # Start the first process
-    p.join()  # Wait for the first process to finish
+    for p in processes:
+        p.start()  # Start each process
+    for p in processes:
+        p.join()  # Wait for each process to finish
 
 # day 10 content:
 
