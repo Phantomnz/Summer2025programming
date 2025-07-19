@@ -1,0 +1,6 @@
+{
+    "comment1": "Normal comments are not allowed in JSON files and must be included as part of the data.",
+    "comment2": "Supported data types are: objects ({}), arrays ([]), strings (\"\"), numbers (no NaN or infinity) , booleans (true/false), and null.",
+    "comment3": "JSON is often used for configuration files and data interchange between web clients and servers.",
+    "comment4": "And in building this file, you'll realise that trailing commas are not allowed in JSON."
+}
