@@ -1,0 +1,21 @@
+{
+    "comment1": "Reviving Data with Reviver- JSON.parse() can take a reviver(key, value) to transform values during parsing. Below is technically JS code demonstrating this."
+}
+const str = '{"a": "2025-07-15T12:00:00Z"}'; // JSON string
+const obj = JSON.parse(str, (k, v) =>
+    k === "a" ? new Date(v) : v
+);
+console.log(obj.a instanceof Date); // Output: true
+
+{
+    "comment2": "JSON.stringify() circular reference error- Serializing objects with circular references throws:"
+}
+const o = {};
+o.self = o; // Circular reference
+JSON.stringify(o); // Throws TypeError: Converting circular structure to JSON
+
+{
+    "comment3": "Streaming JSON with NDJSON - Newline Delimited JSON (NDJSON) writes one JSON object per line, making streaming easier, an example is below:"
+}
+{ "id": 1, "msg":"Alice"}
+{ "id": 2, "msg":"Bob"}
