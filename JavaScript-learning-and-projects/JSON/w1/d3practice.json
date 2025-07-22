@@ -1,0 +1,18 @@
+{
+    "comment1": "JSON pointer (RFC 6901)- A string syntax for identifying values within a JSON document"
+}
+/foo/0 // selects the first element of the array at the root level
+/foo/~1 // selects the second element of the array at the root level
+
+{
+    "comment2": "JSON merge patch (RFC 7396) - A format for expressing partial modifications to a JSON document. Applying:"
+}
+{"title": "old", "tags": ["a","b"]}
+{"title": "new", "tags": ["a","c"]} // results in {"title": "new", "tags": ["a","b","c"]}
+
+{
+    "comment3": "Streaming JSON with JSON lines (NDJSON) - Each line is a standalone JSON object, making logs or streams easy to parse line by line."
+}
+{ "time": 1, "msg":"start"}
+{ "time": 2, "msg":"process"}
+
