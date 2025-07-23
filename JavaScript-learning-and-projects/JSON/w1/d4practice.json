@@ -1,0 +1,24 @@
+[
+    {
+        "comment1": "JSON Schema for Validation - Define a schema to validate JSON structure before use",
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "properties": {
+            "name": { "type": "string" },
+            "age": { "type": "integer", "minimum": 0 }
+        },
+        "required": ["name", "age"]
+    },
+    {
+        "comment2": "JSON Patch (RFC 6902) - Express partial updates via an array of operations:",
+        "operations": [
+            { "op": "replace",  "path": "/name", "value": "Jane Doe" },
+            { "op": "add",      "path": "/tags/0", "value": "new" }
+        ]
+    },
+    {
+        "comment3": "JSON-LD Contexts - Add semantic meaning by mapping terms to IRIs:",
+        "@context": { "name": "http://schema.org/name" },
+        "name": "Example"
+    }
+]
