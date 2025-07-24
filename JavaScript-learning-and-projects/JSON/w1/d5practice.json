@@ -1,0 +1,10 @@
+{
+    "data": [
+        { "comment1": "Array of objects in JSON - JSON can represent arrays of objects for structured collections" },
+        { "id": 1, "name": "Alice" },
+        { "id": 2, "name": "Bob" },
+        { "id": 3, "name": "Charlie" }
+    ],
+    "comment2": "JSON doesn't support functions or comments directly, but you can include them in a way that they are ignored by parsers",
+    "comment3": "Unlike JS, JSON cannot contain trailing commas"
+}
