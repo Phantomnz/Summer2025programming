@@ -1,0 +1,23 @@
+{   "comment1": "JSON Text Sequences (RFC 7464)- A format for streaming multiples JSON texts in one stream by seperating them with the ASCII *Record Separator* (U+001E).",
+    "comment1.1": "Parsers read each complete JSON value without needing a surrounding array.",
+    "records": [
+        ␞{"id":1,"msg":"start"}␞{"id":2,"msg":"next"}␞
+    ],
+    "use_case": "Logging or IPC where each line is a standalone JSON object.",
+    "note": "The leading record seperator character (\u001E) distinguishes JSON fragments from other text."
+}
+
+Importing JSON Modules with assertions: Modern JS environments (Node.js, browsers with module support) allow importing JSON directly, with a required assertion:
+import config from './config.json' assert { type: 'json'}; // Example of importing a JSON file in a module context
+console.log(config.theme); // Accessing a property from the imported JSON object
+// Benefit: The runtime validates the file as JSON, enabling static analysis and bundler optimizations
+// Limitations: Must be served with correct MIME (Multipurpose Internet Mail Extensions) type and supported by the environment
+
+// Deep Cloning via JSON.parse/JSON.stringify: Pitfalls - While a common approach for deep-copying plain objects, it has limitations:
+// Loses functions, Date objects, RegExp instances, Map, Set, and custom prototypes.
+// Converts undefined to null and drops Symbol properties.
+const orig = { date: new Date(), fn: () => 1}; // Example object with a Date and a function
+const clone = JSON.parse(JSON.stringify(orig)); // clone is now { date: "2023-10-01T00:00:00.000Z", fn: null }
+console.log(clone.date instanceof Date); // false, Date is lost 
+// Use this method only for simple data structures consisting of plain objects, arrays, numbers, strings, booleans, and null.
+
