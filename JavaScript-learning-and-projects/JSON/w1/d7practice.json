@@ -1,0 +1,25 @@
+{
+    "comment1": "Conditional schemas in JSON schema (Draft 7)- You can enforce conditional validation in JSON schema using 'if', 'then', and 'else' keywords.",
+    "use-case": "Require different fields depending on another property's value.",
+    "example1": {
+        "type": "object",
+        "properties": { "role": { "enum": ["admin", "user"]} },
+        "if": { "properties": { "role": { "const": "admin" } } },
+        "then": { "required": ["adminCode"] },
+        "else": { "required": ["userCode"] }
+    },
+    "comment2": "JSON Hypertext Application Language (HAL) - A lightweight JSON-based format for linking between resources.",
+    "benefit": "Embeds navigational links in the payload, easing RESTful hypermedia",
+    "example2":
+    {
+        "_links": {
+            "self": { "href": "/orders/123"},
+            "next": { "href": "/orders/124" }
+        },
+        "total": 100
+    },
+    "comment3.1": "Canonical JSON for Fingerprinting and Signing- to reliably sign or fingerprint JSON, You need a deterministic byte form:",
+    "comment3.2": "-- Sort Object keys lexicographically (alphabetically)",
+    "comment3.3": "-- Remove whitespace and indentation (whitespace being any space, tab, newline, or carriage return)",
+    "comment3.4": "-- Escape control characters consistently -- A canonical form (e.g. RFC 8785) ensures different implementations produce identical outputs for the same data."
+}
