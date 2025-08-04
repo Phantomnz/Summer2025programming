@@ -1,0 +1,18 @@
+{
+    "comment1.1": "JSON Number Precision Limitations - JSON has a single number type which in JavaScript and most implementations maps to IEEE 754 double-precision. This means integers above 2⁵³ - 1 (~9 007 199 254 740 992) cannot be represented exactly",
+    "comment1.2": "If your data requires exact large integers, consider using strings to represent them in JSON and convert them to numbers in your application logic.",
+    
+    "comment2": "JSON schema patternProperties for Flexible Validation - Beyond properties and additionalProperties, Schema's patternProperties lets you apply schemas to keys matching a regex:",
+    "Example": {
+        "type": "object",
+        "patternProperties": {
+            "^S_": { "type": "string" },
+            "^I_": { "type": "integer" }
+        }
+    },
+    "behaviour": "Keys with 'S_' prefix must be strings, 'I_' prefix must be integers. Other keys are not validated by this schema.",
+    "usecase": "Validating objects with systematically named fields (e.g. sensor data, prefixed settings).",
+
+    "comment3": "Always 'send Content-Type: application/json; charset=utf-8' when serving or posting JSON over HTTP. It ensures clients parse the body as JSON, and specifies UTF-8 to cover all Unicode characters reliably.",
+    "pitfall": "Omitting or mis-specifying this header can lead to parsing errors or security issues (e.g. JSON polyglot (polyglot meaning multiple interpretations) attacks if treated as HTML)."
+}
