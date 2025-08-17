@@ -1,0 +1,7 @@
+{
+    "comment":"The code below configures path aliases",
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": { "@/*": ["src/*"] }
+    }
+}
