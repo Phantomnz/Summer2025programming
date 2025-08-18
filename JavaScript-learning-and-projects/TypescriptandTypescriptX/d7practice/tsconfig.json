@@ -1,0 +1,9 @@
+{   
+    "comment1": "noUncheckedIndexedAccess: arr[i] becomes T|undefined, forcing checks",
+    "comment2": "exactOptionalPropertyTypes: distinguishes \"missing\" from \"explicitly undefined\"",
+    "compilerOptions": {
+        "strict": true,
+        "noUncheckedIndexedAccess": true,
+        "exactOptionalPropertyTypes": true
+    }
+}
