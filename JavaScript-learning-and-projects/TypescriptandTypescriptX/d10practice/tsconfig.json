@@ -1,0 +1,10 @@
+// tsconfig.json (additive picks)
+{
+  "compilerOptions": {
+    "strict": true,
+    "noImplicitOverride": true,
+    "noFallthroughCasesInSwitch": true,
+    "resolveJsonModule": true,
+    "useUnknownInCatchVariables": true
+  }
+}
