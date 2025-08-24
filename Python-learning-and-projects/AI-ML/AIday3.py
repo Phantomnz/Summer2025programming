@@ -1,3 +1,4 @@
+# AI/ML with Python — Day 3 (matplotlib for quick EDA (Exploratory Data Analysis))
 # Prefer the object-oriented API (plt.subplots)
 import numpy as np
 import matplotlib.pyplot as plt

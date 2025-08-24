@@ -1,3 +1,4 @@
+# AI/ML with Python — Day 2 (pandas data wrangling)
 # Efficient reads: read_csv with usecols, dtype, parse_dates
 import pandas as pd
 from io import StringIO

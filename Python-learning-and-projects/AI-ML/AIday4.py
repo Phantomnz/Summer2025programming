@@ -1,3 +1,4 @@
+# AI/ML with Python — Day 4 (scikit-learn: fit/predict workflow)
 # Train/test split + Pipeline keeps preprocesing and model together
 from sklearn.model_selection import train_test_split
 from sklearn.pipeline import Pipeline

@@ -1,3 +1,4 @@
+# AI/ML with Python — Day 1 (NumPy fundamentals & vectorization)
 # Arrays are Typed, n-dimensional blocks (not Python Lists) 
 import numpy as np
 
